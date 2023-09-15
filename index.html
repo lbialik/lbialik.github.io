@@ -1,111 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- Page setup -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Liza Bialik's Personal Website</title>
-    <meta name="description" content="Liza Bialik's Personal Website">
-    <meta name="author" content="Liza Bialik">
+    <meta name="description" content="Liza Bialik's Personal Website" />
+    <meta name="author" content="Liza Bialik" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> -->
     <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
-        type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Want to add Bootstrap? -->
     <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header id="header">
-        
-        <img src="profile.jpeg" width="220", height="220">
-        <h1>Liza Bialik</h1>
+      <img src="images/profile.jpeg" width="220" , height="220" />
+      <h1 class="title">Liza Bialik</h1>
 
-        <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
-        <ul class="main-menu">
-            <li><a href="#home">home</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#resume">resume</a></li>
-            <li><a href="#ceramics">ceramics</a></li>
-            <li><a href="#contact">contact</a></li>
-            
-        </ul>
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">home</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#ceramics">ceramics</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
     </header>
 
     <div id="container">
-        <div class="inner">
-            <div id="content">
+      <div class="inner">
+        <div id="content">
+          <div id="home" class="content-region hide">
+            <h2>Hi there!</h2>
+            <!-- <h3>Welcome to my website.</h3> -->
+            <h4>
+              I'm Liza, a linguist and computer scientist who loves creative
+              collaboration.
+            </h4>
+            <p>
+              Non-coding hobbies include rock climbing, pottery, mushroom
+              foraging, swing dancing (west coast), and petting every cat whose
+              path I'm lucky enough to cross.
+            </p>
+          </div>
 
-                <div id="home" class="content-region hide">
-                    <h2>Hi there! </h2>
-                    <h3> Welcome to my website. </h3>
-                    <p>
-                        I'm Liza, a linguist and computer scientist who loves creative collaboration. 
-                    </p>
-                    <p>
-                        Non-coding hobbies include rock climbing, pottery, mushroom foraging, swing dancing (west coast), and petting every cat whose path I'm lucky enough to cross.
-                    </p>
-                </div>
-
-                <div id="projects" class="content-region hide">
-                    <h3>Bolete Filter</h3>
-                    <p>
-                        A React Native mobile app of an existing online mushroom triaging tool.
-                    </p>
-                    <h3>
-                        QuestionWell
-                    </h3>
-                    <p>
-                        Coming Soon!
-                    </p>
-                </div>
-
-                <div id="Resume" class="content-region hide">
-                    
-                </div>
-
-                <div id="ceramics" class="content-region hide">
-                    <h2>Ceramics Portfolio</h2>
-                    <p>
-                        [insert art here]
-                    </p>
-                </div>
-
-                <div id="contact" class="content-region hide">
-                    <p>
-                        Please feel free to connect with me! 
-                    </p>
-                    <p>
-                        You can reach me at liza dot bialik at gmail dot com.
-
-                    </p>
-                </div>
-
+          <div id="projects" class="content-region hide">
+            <a href="https://boletefilter.github.io/">
+              <h2>
+                <img
+                  src="images/bolete_filter_icon.png"
+                  width="26"
+                  ,
+                  height="26"
+                  ,
+                  style="border-radius: 5px; margin-right: 5px"
+                />
+                Bolete Filter
+              </h2>
+            </a>
+            <p>
+              A React Native mobile app of an existing online
+              <a
+                class="btn btn-link"
+                href="https://boletes.wpamushroomclub.org/"
+                >mushroom triaging tool</a
+              >
+              co-created with
+              <a class="btn btn-link" href="https://kenney.dev/">Jack Kenney</a
+              >. The Bolete Filter allows users to narrow down Bolete mushrooms
+              (i.e. those with pores instead of gills) based on critical
+              features from 200+ species down to just a few! Offline
+              compatibility allows use anywhere, including in the middle of the
+              woods with no service!
+            </p>
+            <a class="btn btn-link" hfef="https://www.questionwell.org/">
+              <h2>
+                <img
+                  src="images/qwell_icon.png"
+                  width="26"
+                  ,
+                  height="26"
+                  ,
+                  style="border-radius: 5px"
+                />
+                <a href="https://www.questionwell.org/">QuestionWell</a>
+              </h2>
+            </a>
+            <p>Coming Soon!</p>
+            <div style="margin-top: 55px">
+              Download my resume
+              <a href="images/Resume_Liza_Bialik.pdf">here.</a>
             </div>
+          </div>
+
+          <div id="ceramics" class="content-region hide">
+            <h2>Ceramics Portfolio</h2>
+            <p>[insert art here]</p>
+          </div>
+
+          <div id="contact" class="content-region hide">
+            <p>Please feel free to connect!</p>
+            <p>You can reach me at liza dot bialik at gmail dot com.</p>
+          </div>
         </div>
+      </div>
     </div>
 
-    <!-- <footer>
-        Footer region
-    </footer> -->
+    <!-- <footer>Footer region</footer> -->
 
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
