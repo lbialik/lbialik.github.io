@@ -1,5 +1,37 @@
 // gallery.js
 
+// Function to generate multiple galleries
+document.addEventListener("DOMContentLoaded", function () {
+  // Gallery data (image URLs and associated IDs)
+  const galleries = [
+    {
+      id: "teapotGallery",
+      featuredId: "teapotGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/teapot_1.jpg",
+        "images/ceramics/teapot_2.jpg",
+        "images/ceramics/teapot_3.jpg",
+        "images/ceramics/teapot_4.jpg",
+      ],
+    },
+    {
+      id: "mugGallery",
+      featuredId: "mugGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/mugs_1.jpg",
+        "images/ceramics/mugs_2.jpg",
+        "images/ceramics/mugs_3.jpg",
+      ],
+    },
+  ];
+
+  // Initialize galleries
+  galleries.forEach((gallery) => {
+    generateFeatured(gallery.imageUrls[0], gallery.featuredId);
+    generateGallery(gallery.imageUrls, gallery.id);
+  });
+});
+
 // Function to generate entire gallery, featured image included
 function generateFeatured(imageUrl, featuredId) {
   // Create a new <img> element
