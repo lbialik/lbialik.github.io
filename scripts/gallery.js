@@ -1,10 +1,15 @@
 // gallery.js
 
 // Function to generate gallery items from a list of image URLs
-function generateGallery(images) {
-  const galleryElement = document.getElementById("gallery");
+function generateGallery(imageUrls, galleryID) {
+  const galleryElement = document.getElementById(galleryID);
 
-  images.forEach((imageUrl, index) => {
+  if (!galleryElement) {
+    console.error(`Gallery element with ID '${galleryId}' not found.`);
+    return;
+  }
+
+  imageUrls.forEach((imageUrl, index) => {
     const galleryItem = document.createElement("div");
     galleryItem.classList.add("gallery-item");
 
@@ -19,6 +24,6 @@ function generateGallery(images) {
 }
 
 // Function to set the featured image
-function setFeatured(imageUrl) {
-  document.getElementById("featured").src = imageUrl;
+function setFeatured(imageUrl, galleryID) {
+  document.getElementById(galleryID + "featured").src = imageUrl;
 }

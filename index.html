@@ -118,6 +118,8 @@
 
           <div id="ceramics" class="content-region hide">
             <h2>Ceramics Portfolio</h2>
+
+            <!-- Teapot Series -->
             <div class="featured-image">
               <img
                 id="featured"
@@ -126,30 +128,42 @@
                 class="featured-image"
               />
             </div>
-            <div class="gallery">
-              <div class="gallery-item">
-                <img
-                  src="images/ceramics/teapot_1.jpg"
-                  alt="Image 1"
-                  onclick="setFeatured('images/ceramics/teapot_1.jpg')"
-                />
-              </div>
-              <div class="gallery-item">
-                <img
-                  src="images/ceramics/teapot_2.jpg"
-                  alt="Image 2"
-                  onclick="setFeatured('images/ceramics/teapot_2.jpg')"
-                />
-              </div>
-              <div class="gallery-item">
-                <img
-                  src="images/ceramics/teapot_3.jpg"
-                  alt="Image 3"
-                  onclick="setFeatured('images/ceramics/teapot_3.jpg')"
-                />
-              </div>
-              <!-- Add more gallery items as needed -->
+            <div class="gallery" id="teapotGallery">
+              <!-- Gallery items will be dynamically generated here -->
             </div>
+            <script>
+              const teapotImageUrls = [
+                "images/ceramics/teapot_1.jpg",
+                "images/ceramics/teapot_2.jpg",
+                "images/ceramics/teapot_3.jpg",
+              ];
+              document.addEventListener("DOMContentLoaded", function () {
+                generateGallery(teapotImageUrls, "teapotGallery");
+              });
+            </script>
+
+            <!-- Mugs -->
+            <div class="featured-image">
+              <img
+                id="featured"
+                src="images/ceramics/mugs_1.jpg"
+                alt="Featured Image"
+                class="featured-image"
+              />
+            </div>
+            <div class="gallery" id="mugGallery">
+              <!-- Gallery items will be dynamically generated here -->
+            </div>
+            <script>
+              const mugsImageUrls = [
+                "images/ceramics/mugs_1.jpg",
+                "images/ceramics/mugs_2.jpg",
+                "images/ceramics/mugs_3.jpg",
+              ];
+              document.addEventListener("DOMContentLoaded", function () {
+                generateGallery(mugsImageUrls, "mugGallery");
+              });
+            </script>
           </div>
 
           <div id="contact" class="content-region hide">
@@ -164,5 +178,6 @@
 
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/gallery.js"></script>
   </body>
 </html>

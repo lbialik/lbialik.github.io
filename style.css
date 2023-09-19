@@ -202,6 +202,7 @@ ul.main-menu li a.active {
   margin: 0 auto; /* Center the gallery */
   text-align: center; /* Center the gallery content horizontally */
   display: flex;
+  padding-bottom: 20px;
 }
 
 /* Style for the gallery items (images) and gallery row */
@@ -232,6 +233,5 @@ ul.main-menu li a.active {
 .featured-image img {
   max-width: 85%;
   height: 500px;
-  object-fit: contain;
   max-height: 100%;
 }
