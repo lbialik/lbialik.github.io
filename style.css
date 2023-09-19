@@ -219,6 +219,7 @@ ul.main-menu li a.active {
 .gallery .gallery-item img {
   width: 100%;
   height: auto;
+  max-height: 75px;
   display: block;
 }
 
@@ -231,7 +232,8 @@ ul.main-menu li a.active {
 
 /* Featured image */
 .featured-image img {
-  max-width: 85%;
+  max-width: 90%;
   height: 500px;
   max-height: 100%;
+  object-fit: contain;
 }

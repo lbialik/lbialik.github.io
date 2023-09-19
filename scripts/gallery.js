@@ -18,9 +18,74 @@ document.addEventListener("DOMContentLoaded", function () {
       id: "mugGallery",
       featuredId: "mugGalleryFeatured",
       imageUrls: [
-        "images/ceramics/mugs_1.jpg",
         "images/ceramics/mugs_2.jpg",
         "images/ceramics/mugs_3.jpg",
+        "images/ceramics/mugs_1.jpg",
+      ],
+    },
+    {
+      id: "woodGallery",
+      featuredId: "woodGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/wood_1.jpg",
+        "images/ceramics/wood_2.jpg",
+        "images/ceramics/wood_3.jpg",
+        "images/ceramics/wood_4.jpg",
+        "images/ceramics/wood_5.jpg",
+      ],
+    },
+    {
+      id: "cupsGallery",
+      featuredId: "cupsGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/cups_5.jpg",
+        "images/ceramics/cups_6.jpg",
+        "images/ceramics/cups_7.jpg",
+        "images/ceramics/cups_8.jpg",
+      ],
+    },
+    {
+      id: "tankGallery",
+      featuredId: "tankGalleryFeatured",
+      imageUrls: ["images/ceramics/tank_1.jpg", "images/ceramics/tank_2.jpg"],
+    },
+    {
+      id: "hands_sphereGallery",
+      featuredId: "hands_sphereGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/hands_sphere_2.jpg",
+        "images/ceramics/hands_sphere_3.jpg",
+        "images/ceramics/hands_sphere_1.jpg",
+        "images/ceramics/hands_sphere_4.jpg",
+      ],
+    },
+    {
+      id: "dinnerSetGallery",
+      featuredId: "dinnerSetGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/dinner_set_1.jpg",
+        "images/ceramics/dinner_set_2.jpg",
+      ],
+    },
+    {
+      id: "marbledGallery",
+      featuredId: "marbledGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/marbled_1.jpg",
+        "images/ceramics/marbled_2.jpg",
+        "images/ceramics/marbled_3.jpg",
+      ],
+    },
+    {
+      id: "vinesGallery",
+      featuredId: "vinesGalleryFeatured",
+      imageUrls: [
+        "images/ceramics/vines_1.jpg",
+        "images/ceramics/vines_2.jpg",
+        "images/ceramics/vines_3.jpg",
+        "images/ceramics/vines_4.jpg",
+        "images/ceramics/vines_5.jpg",
+        "images/ceramics/vines_6.jpg",
       ],
     },
   ];
