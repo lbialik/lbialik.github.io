@@ -62,8 +62,8 @@
             </h4>
             <p>
               Non-coding hobbies include rock climbing, pottery, mushroom
-              foraging, swing dancing (west coast), and petting every cat whose
-              path I'm lucky enough to cross.
+              foraging, improv comedy, swing dancing, and petting every cat
+              whose path I'm lucky enough to cross.
             </p>
           </div>
 
@@ -118,7 +118,38 @@
 
           <div id="ceramics" class="content-region hide">
             <h2>Ceramics Portfolio</h2>
-            <p>[insert art here]</p>
+            <div class="featured-image">
+              <img
+                id="featured"
+                src="images/ceramics/teapot_1.jpg"
+                alt="Featured Image"
+                class="featured-image"
+              />
+            </div>
+            <div class="gallery">
+              <div class="gallery-item">
+                <img
+                  src="images/ceramics/teapot_1.jpg"
+                  alt="Image 1"
+                  onclick="setFeatured('images/ceramics/teapot_1.jpg')"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="images/ceramics/teapot_2.jpg"
+                  alt="Image 2"
+                  onclick="setFeatured('images/ceramics/teapot_2.jpg')"
+                />
+              </div>
+              <div class="gallery-item">
+                <img
+                  src="images/ceramics/teapot_3.jpg"
+                  alt="Image 3"
+                  onclick="setFeatured('images/ceramics/teapot_3.jpg')"
+                />
+              </div>
+              <!-- Add more gallery items as needed -->
+            </div>
           </div>
 
           <div id="contact" class="content-region hide">
@@ -132,6 +163,6 @@
     <!-- <footer>Footer region</footer> -->
 
     <!-- Load additional JS scripts here -->
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>

@@ -195,3 +195,43 @@ ul.main-menu li a.active {
   clear: both;
   display: table;
 }
+
+/* Style for the gallery container */
+.gallery {
+  max-width: 300px; /* Adjust as needed */
+  margin: 0 auto; /* Center the gallery */
+  text-align: center; /* Center the gallery content horizontally */
+  display: flex;
+}
+
+/* Style for the gallery items (images) and gallery row */
+.gallery .gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block; /* Display items inline */
+  vertical-align: top; /* Align items to the top */
+  margin-right: 10px; /* Add some spacing between gallery items */
+}
+
+/* Style for the image inside each gallery item */
+.gallery .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Featured image container */
+.featured-image {
+  margin: 0 auto; /* Center the featured image */
+  height: 100%;
+  text-align: center;
+}
+
+/* Featured image */
+.featured-image img {
+  max-width: 85%;
+  height: 500px;
+  object-fit: contain;
+  max-height: 100%;
+}
